@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="Conceptual Data Model">
+    <mxGraphModel dx="1020" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- User Entity -->
+        <mxCell id="User" value="User" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UserText" value="Пользователь может регистрироваться, делать заказы, управлять корзиной." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="190" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Category Entity -->
+        <mxCell id="Category" value="Category" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CategoryText" value="Категория объединяет товары (например, 'Пицца')." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="190" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Product Entity -->
+        <mxCell id="Product" value="Product" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ProductText" value="Товар, связанный с категорией и содержащий ингредиенты." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="500" y="190" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Ingredient Entity -->
+        <mxCell id="Ingredient" value="Ingredient" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IngredientText" value="Ингредиент продукта, например, сыр или ветчина." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="700" y="190" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Cart Entity -->
+        <mxCell id="Cart" value="Cart" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CartText" value="Корзина содержит товары, добавленные пользователем перед покупкой." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- CartItem Entity -->
+        <mxCell id="CartItem" value="CartItem" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CartItemText" value="Товар в корзине, содержащий данные о продукте, количестве и ингредиентах." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="390" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Order Entity -->
+        <mxCell id="Order" value="Order" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderText" value="Заказ содержит информацию о товарах, статусе и данных доставки." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="500" y="390" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- VerificationCode Entity -->
+        <mxCell id="VerificationCode" value="VerificationCode" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#cce5ff;strokeColor=#0056b3;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="700" y="300" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VerificationCodeText" value="Код подтверждения для верификации пользователя." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="700" y="390" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Story Entity -->
+        <mxCell id="Story" value="Story" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffccff;strokeColor=#b300b3;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="StoryText" value="История, отображающая новости или акции для пользователей." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="590" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- StoryItem Entity -->
+        <mxCell id="StoryItem" value="StoryItem" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ccffcc;strokeColor=#00b300;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="500" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="StoryItemText" value="Элемент истории, содержащий медиа и текстовое описание." style="text;whiteSpace=wrap;html=1;align=center;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="590" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Relations -->
+        <mxCell id="UserToCart" value="1:1" edge="1" parent="1" source="User" target="Cart" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UserToOrder" value="1:M" edge="1" parent="1" source="User" target="Order" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CategoryToProduct" value="1:M" edge="1" parent="1" source="Category" target="Product" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ProductToIngredient" value="M:N" edge="1" parent="1" source="Product" target="Ingredient" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CartToCartItem" value="1:M" edge="1" parent="1" source="Cart" target="CartItem" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="StoryToStoryItem" value="1:M" edge="1" parent="1" source="Story" target="StoryItem" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="Conceptual Data Model">
+    <mxGraphModel dx="1020" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- User Entity -->
+        <mxCell id="User" value="User" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Category Entity -->
+        <mxCell id="Category" value="Category" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Product Entity -->
+        <mxCell id="Product" value="Product" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Ingredient Entity -->
+        <mxCell id="Ingredient" value="Ingredient" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Cart Entity -->
+        <mxCell id="Cart" value="Cart" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- CartItem Entity -->
+        <mxCell id="CartItem" value="CartItem" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Order Entity -->
+        <mxCell id="Order" value="Order" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- VerificationCode Entity -->
+        <mxCell id="VerificationCode" value="VerificationCode" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#cce5ff;strokeColor=#0056b3;" vertex="1" parent="1">
+          <mxGeometry x="700" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Story Entity -->
+        <mxCell id="Story" value="Story" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffccff;strokeColor=#b300b3;" vertex="1" parent="1">
+          <mxGeometry x="300" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- StoryItem Entity -->
+        <mxCell id="StoryItem" value="StoryItem" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ccffcc;strokeColor=#00b300;" vertex="1" parent="1">
+          <mxGeometry x="500" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Relations -->
+        <mxCell id="UserToCart" edge="1" parent="1" source="User" target="Cart">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="UserToOrder" edge="1" parent="1" source="User" target="Order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="CategoryToProduct" edge="1" parent="1" source="Category" target="Product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ProductToIngredient" edge="1" parent="1" source="Product" target="Ingredient">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="CartToCartItem" edge="1" parent="1" source="Cart" target="CartItem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="StoryToStoryItem" edge="1" parent="1" source="Story" target="StoryItem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
